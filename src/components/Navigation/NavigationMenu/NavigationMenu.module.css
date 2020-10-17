@@ -2,10 +2,10 @@
     padding: 20px;
 }
 
-.NavigationMenu li,
-.Navigationmenu ul {
+.NavigationMenu li {
     list-style-type: none;
-    margin: 0.2rem;
+    margin-left: 0.2rem;
+    margin-bottom: 48px;
 }
 
 .NavigationMenu ul {
