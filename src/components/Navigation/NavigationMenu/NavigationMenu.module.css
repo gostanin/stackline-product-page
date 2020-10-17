@@ -1,0 +1,13 @@
+.NavigationMenu {
+    padding: 20px;
+}
+
+.NavigationMenu li,
+.Navigationmenu ul {
+    list-style-type: none;
+    margin: 0.2rem;
+}
+
+.NavigationMenu ul {
+    padding: 0;
+}
