@@ -1,10 +1,10 @@
 .NavigationBar {
     background-color: #fff;
     width: 100%;
-    height: 40px;
+    height: 80px;
     margin: 0;
     padding: 20px 40px;
-    display: inline-block;
+    /* display: block; */
     box-shadow: 1px 0 0 2px rgb(236, 236, 236);
     margin-bottom: 60px;
 }

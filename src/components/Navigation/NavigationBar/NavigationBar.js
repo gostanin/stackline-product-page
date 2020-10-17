@@ -5,8 +5,8 @@ import Logo from "../../Logo/Logo";
 
 const navigationBar = (props) => {
     return (
-        <header>
-            <div className={styles.NavigationBar}>
+        <header className={styles.NavigationBar}>
+            <div>
                 <Logo />
             </div>
         </header>
