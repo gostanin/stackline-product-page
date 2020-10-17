@@ -6,6 +6,10 @@
     border-bottom: 2px solid #f6f8fa;
 }
 
+.ProductInformation img {
+    width: 70%;
+}
+
 .ProductInformation p {
     font-size: 1.2rem;
     font-weight: 600;
