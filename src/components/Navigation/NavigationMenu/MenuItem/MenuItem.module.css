@@ -1,0 +1,30 @@
+.MenuItem {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.MenuItem:hover {
+    color: #46a7f6;
+}
+
+.MenuItem img {
+    width: 18px;
+    margin-right: 20px;
+}
+
+.MenuItem span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.inactive {
+    color: #aaa;
+}
+
+.inactive img {
+    opacity: 0.5;
+}
