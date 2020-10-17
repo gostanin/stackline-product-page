@@ -4,7 +4,22 @@
     height: 80px;
     margin: 0;
     padding: 20px 40px;
-    /* display: block; */
+    position: relative;
     box-shadow: 1px 0 0 2px rgb(236, 236, 236);
     margin-bottom: 60px;
+}
+
+.NavigationBar div {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.NavigationBar p {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.NavigationBar img {
+    max-height: 40px;
 }

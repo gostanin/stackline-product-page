@@ -6,9 +6,7 @@ import Logo from "../../Logo/Logo";
 const navigationBar = (props) => {
     return (
         <header className={styles.NavigationBar}>
-            <div>
-                <Logo />
-            </div>
+            <Logo /><p>Stackline</p>
         </header>
     );
 };
