@@ -13,16 +13,20 @@ const chart = (props) => {
         </tr>
     );
     return (
-        <table className={styles.Chart}>
-            <tr>
-                <th>WEEK ENDING</th>
-                <th>RETAIL SALES</th>
-                <th>WHOLESALE SALES</th>
-                <th>UNIT SOLD</th>
-                <th>RETAILER MARGIN</th>
-            </tr>
-            {items}
-        </table>
+        <div className={styles.Chart}>
+            <table>
+                <thead>
+                    <tr>
+                        <th>WEEK ENDING</th>
+                        <th>RETAIL SALES</th>
+                        <th>WHOLESALE SALES</th>
+                        <th>UNIT SOLD</th>
+                        <th>RETAILER MARGIN</th>
+                    </tr>
+                </thead>
+                <tbody>{items}</tbody>
+            </table>
+        </div>
     );
 };
 
