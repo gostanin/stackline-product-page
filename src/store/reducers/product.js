@@ -15,7 +15,6 @@ const initialState = {
 
 const loadData = (state, action) => {
     const newState = action.data[0]
-    console.log(newState);
     return newState;
 };
 
