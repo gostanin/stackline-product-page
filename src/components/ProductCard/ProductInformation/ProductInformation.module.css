@@ -1,0 +1,17 @@
+.ProductInformation {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px 70px;
+    border-bottom: 2px solid #f6f8fa;
+}
+
+.ProductInformation p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.ProductInformation span {
+    font-size: 0.9rem;
+    color: #a0abba;
+    text-align: center;
+}
