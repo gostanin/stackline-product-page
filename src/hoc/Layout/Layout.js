@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import styles from "./Layout.module.css";
+import NavigationBar from "../../components/Navigation/NavigationBar/NavigationBar";
 
 class Layout extends Component {
     render() {
         return (
             <React.Fragment>
                 <NavigationBar />
-                <main>{this.props.children}</main>
+                <main className={styles.Layout}>{this.props.children}</main>
             </React.Fragment>
         );
     }
