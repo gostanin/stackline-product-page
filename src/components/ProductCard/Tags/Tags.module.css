@@ -14,3 +14,9 @@
     display: inline-block;
     font-weight: 400;
 }
+
+.Tags p:hover {
+    background-color: #46a7f6;
+    cursor: pointer;
+    color: #f6f8fa;
+}
