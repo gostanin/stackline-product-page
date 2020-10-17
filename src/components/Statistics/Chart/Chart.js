@@ -7,9 +7,6 @@ const chart = (props) => {
         return (
             <tr key={indexItem}>
                 {Object.entries(item).map(([key, _], indexField) => {
-                    console.log(
-                        key.split(/(?=[A-Z])/).map((word) => word.toUpperCase())
-                    );
                     return (
                         <th key={indexItem + indexField}>
                             {key
