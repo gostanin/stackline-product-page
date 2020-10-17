@@ -6,24 +6,26 @@
     cursor: pointer;
 }
 
-.MenuItem:hover {
+.MenuItem:hover:not(.active) span{
     color: #46a7f6;
 }
 
 .MenuItem img {
     width: 18px;
     margin-right: 20px;
+    opacity: 0.5;
 }
 
 .MenuItem span {
     font-size: 1rem;
     font-weight: 500;
-}
-
-.inactive {
     color: #aaa;
 }
 
-.inactive img {
-    opacity: 0.5;
+.active span {
+    color: #000;
+}
+
+.active img {
+    opacity: 1;
 }

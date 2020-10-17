@@ -4,11 +4,11 @@ import styles from "./MenuItem.module.css";
 
 const menuItem = (props) => {
     const allStyles = props.active
-        ? styles.MenuItem
-        : styles.inactive.concat(" ", styles.MenuItem);
+        ? styles.active.concat(" ", styles.MenuItem)
+        : styles.MenuItem;
     return (
         <button className={allStyles}>
-            <img src={props.img} alt="home" />
+            <img src={props.img} alt={props.text} />
             <span>{props.text}</span>
         </button>
     );
