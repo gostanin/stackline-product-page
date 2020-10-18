@@ -6,3 +6,9 @@
     align-content: stretch;
     justify-content: space-between;
 }
+
+.statistics {
+    width: 73%;
+    display: flex;
+    flex-flow: column wrap;
+}

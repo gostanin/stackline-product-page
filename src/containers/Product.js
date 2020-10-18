@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import styles from "./Product.module.css";
 import * as actions from "../store/actions";
 import Chart from "../components/Statistics/Chart/Chart";
+import Graph from "../components/Statistics/Graph/Graph";
 import ProductCard from "../components/ProductCard/ProductCard";
 
 class Product extends Component {
@@ -15,7 +16,10 @@ class Product extends Component {
         return (
             <div className={styles.Product}>
                 <ProductCard />
-                <Chart items={this.props.sales}/>
+                <div className={styles.statistics}>
+                    <Graph data={this.props.sales} label="Retail Sales" />
+                    <Chart items={this.props.sales} />
+                </div>
             </div>
         );
     }
