@@ -1,0 +1,17 @@
+.Graph {
+    height: 500px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.pad {
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    padding-top: 20px;
+    margin: 0 0 80px 0;
+}
+
+.pad p {
+    margin-bottom: 40px;
+}
