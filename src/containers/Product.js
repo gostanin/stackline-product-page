@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Helmet } from "react-helmet";
 
 import styles from "./Product.module.css";
 import * as actions from "../store/actions";
@@ -15,6 +16,9 @@ class Product extends Component {
     render() {
         return (
             <div className={styles.Product}>
+                <Helmet>
+                    <title>{this.props.title}</title>
+                </Helmet>
                 <ProductCard />
                 <div className={styles.statistics}>
                     <Graph data={this.props.sales} label="Retail Sales" />
@@ -26,7 +30,7 @@ class Product extends Component {
 }
 
 const mapStateToProps = (state) => {
-    return { sales: state.sales };
+    return { sales: state.sales, title: state.title };
 };
 
 const mapDispatchToProps = (dispatch) => {
