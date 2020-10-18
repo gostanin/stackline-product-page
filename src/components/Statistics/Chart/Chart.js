@@ -1,4 +1,5 @@
 import React from "react";
+import CurrencyFormat from 'react-currency-format';
 
 import styles from "./Chart.module.css";
 
@@ -22,8 +23,12 @@ const chart = (props) => {
     const items = props.items.map((item, indexItem) => {
         return (
             <tr key={indexItem}>
-                {Object.entries(item).map(([_, value], indexField) => {
-                    return <td key={indexItem + indexField}>{value}</td>;
+                {Object.entries(item).map(([key, value], indexField) => {
+                    const itemData =
+                        key.includes("sale") || key.includes("retail")
+                            ? <CurrencyFormat value={value} displayType={'text'} thousandSeparator={true} prefix={'$'} />
+                            : value;
+                    return <td key={indexItem + indexField}>{itemData}</td>;
                 })}
             </tr>
         );
@@ -31,9 +36,7 @@ const chart = (props) => {
     return (
         <div className={styles.Chart}>
             <table>
-                <thead>
-                    {header}
-                </thead>
+                <thead>{header}</thead>
                 <tbody>{items}</tbody>
             </table>
         </div>
