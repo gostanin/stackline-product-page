@@ -1,7 +1,6 @@
 .Chart {
     background-color: white;
     font-size: 0.75rem;
-    /* width: 73%; */
 }
 
 .Chart table {
@@ -18,12 +17,35 @@
 
 .Chart th {
     padding: 35px;
+    padding-right: 15px;
     font-weight: 400;
 }
 
 .Chart td {
     padding: 20px 35px;
     color: #a0abba;
+}
+
+.Chart th img {
+    margin-left: 12px;
+    text-align: middle;
+    width: 8px;
+    opacity: 0.3;
+}
+
+.Chart th img:hover {
+    margin-left: 12px;
+    text-align: middle;
+    width: 8px;
+    opacity: 0.7;
+}
+
+.Chart th button {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .Chart tr:hover td {

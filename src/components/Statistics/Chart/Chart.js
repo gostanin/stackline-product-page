@@ -1,7 +1,8 @@
 import React from "react";
-import CurrencyFormat from 'react-currency-format';
+import CurrencyFormat from "react-currency-format";
 
 import styles from "./Chart.module.css";
+import arrowImg from "../../../assets/angle-arrow-down.png";
 
 const chart = (props) => {
     const header = props.items.slice(0, 1).map((item, indexItem) => {
@@ -14,6 +15,7 @@ const chart = (props) => {
                                 .split(/(?=[A-Z])/)
                                 .map((word) => word.toUpperCase())
                                 .join(" ")}
+                            <button><img src={arrowImg} alt="sort" /></button>
                         </th>
                     );
                 })}
@@ -25,9 +27,16 @@ const chart = (props) => {
             <tr key={indexItem}>
                 {Object.entries(item).map(([key, value], indexField) => {
                     const itemData =
-                        key.includes("sale") || key.includes("retail")
-                            ? <CurrencyFormat value={value} displayType={'text'} thousandSeparator={true} prefix={'$'} />
-                            : value;
+                        key.includes("sale") || key.includes("retail") ? (
+                            <CurrencyFormat
+                                value={value}
+                                displayType={"text"}
+                                thousandSeparator={true}
+                                prefix={"$"}
+                            />
+                        ) : (
+                            value
+                        );
                     return <td key={indexItem + indexField}>{itemData}</td>;
                 })}
             </tr>
