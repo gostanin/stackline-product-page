@@ -17,9 +17,9 @@
 
 .NavigationBar p {
     display: inline-block;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .NavigationBar img {
-    max-height: 40px;
+    max-height: 32px;
 }
